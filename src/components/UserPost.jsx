@@ -1,6 +1,7 @@
 import { Avatar } from '@chakra-ui/react'
 import { Image } from "@chakra-ui/image";
 import { Box, Flex, Text } from "@chakra-ui/layout";
+import { BsThreeDots } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 
 const UserPost = () => {
@@ -40,21 +41,25 @@ const UserPost = () => {
 						/>
 					</Box>
 				</Flex>
-			</Flex>
-			<Flex flex={1} flexDirection={"column"} gap={2}>
-				<Flex justifyContent={"space-between"} w={"full"}>
-					<Flex w={"full"} alignItems={"center"}>
-						<Text fontSize={"sm"} fontWeight={"bold"}>
-							markzuckerberg
-						</Text>
-						<Image src='/verified.png' w={4} h={4} ml={1} />
+				<Flex flex={1} flexDirection={"column"} gap={2}>
+					<Flex justifyContent={"space-between"} w={"full"}>
+						<Flex w={"full"} alignItems={"center"}>
+							<Text fontSize={"sm"} fontWeight={"bold"}>
+								markzuckerberg
+							</Text>
+							<Image src='/verified.png' w={4} h={4} ml={1} />
+						</Flex>
+						<Flex gap={4} alignItems={"center"}>
+							<Text fontStyle={"sm"} color={"gray.light"}>
+								1d
+							</Text>
+							<BsThreeDots />
+						</Flex>
 					</Flex>
-					<Flex gap={4} alignItems={"center"}>
-						<Text fontStyle={"sm"} color={"gray.light"}>
-							1d
-						</Text>
-
-					</Flex>
+					<Text fontSize={"sm"}>New</Text>
+					<Box borderRadius={6} overflow={"hidden"} border={"1px solid"} borderColor={"gray.light"}>
+						<Image src='/post1.png' w={"full"} />
+					</Box>
 				</Flex>
 			</Flex>
 		</Link>
