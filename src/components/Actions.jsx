@@ -22,7 +22,7 @@ import postsAtom from "../atoms/postsAtom";
 
 const Actions = ({ post }) => {
 	const user = useRecoilValue(userAtom);
-	const [liked, setLiked] = useState(post.likes.includes(user?._id));
+	// const [liked, setLiked] = useState(post.likes.includes(user?._id));
 	const [posts, setPosts] = useRecoilState(postsAtom);
 	const [isLiking, setIsLiking] = useState(false);
 	const [isReplying, setIsReplying] = useState(false);
@@ -110,8 +110,8 @@ const Actions = ({ post }) => {
 			<Flex gap={3} my={2} onClick={(e) => e.preventDefault()}>
 				<svg
 					aria-label='Like'
-					color={liked ? "rgb(237, 73, 86)" : ""}
-					fill={liked ? "rgb(237, 73, 86)" : "transparent"}
+					// color={liked ? "rgb(237, 73, 86)" : ""}
+					// fill={liked ? "rgb(237, 73, 86)" : "transparent"}
 					height='19'
 					role='img'
 					viewBox='0 0 24 22'
@@ -151,11 +151,11 @@ const Actions = ({ post }) => {
 
 			<Flex gap={2} alignItems={"center"}>
 				<Text color={"gray.light"} fontSize='sm'>
-					{post.replies.length} replies
+					{/* {post.replies.length} replies */}
 				</Text>
 				<Box w={0.5} h={0.5} borderRadius={"full"} bg={"gray.light"}></Box>
 				<Text color={"gray.light"} fontSize='sm'>
-					{post.likes.length} likes
+					{/* {post.likes.length} likes */}
 				</Text>
 			</Flex>
 
