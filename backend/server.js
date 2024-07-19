@@ -16,5 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use("/api/users",userRoutes)
+app.use("/api/posts",postRoutes)
 
 app.listen(PORT, () => console.log(`Server Started at http://localhost:${PORT}`))
