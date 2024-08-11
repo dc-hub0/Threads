@@ -19,7 +19,7 @@ Feature List:-
 -   🔊 Notification sounds
 -   ⭐ Deployment
 
-### Setup .env file.
+### Setup .env file
 
 ```js
 PORT=...
